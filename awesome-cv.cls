@@ -649,6 +649,18 @@
   \end{justify}
   \vspace{-4.0mm}
 }
+\newenvironment{cvdesc}{%
+  \vspace{-4.0mm}
+  \begin{justify}
+    \renewcommand\descriptionlabel[1]{\hspace{\labelsep}\textbf{\textit{(##1)}}}
+    \begin{description}[leftmargin=2ex, nosep]%
+    \setlength{\parskip}{0pt}
+    }{%
+    \end{description}%
+  \end{justify}
+  \vspace{-4.0mm}
+}
+
 
 
 %-------------------------------------------------------------------------------
